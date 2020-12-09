@@ -1,4 +1,4 @@
-const { GraphQLServer } = require('graphql-yoga')
+const { GraphQLServer } = require('graphql-yoga');
 const connection = require('./database/connection');
 
 connection.migrate.latest();
@@ -16,5 +16,5 @@ const server = new GraphQLServer({
 })
 
 server.start(() => {
-    console.log("Server listening...")
+    console.log("Server listening...");
 })
